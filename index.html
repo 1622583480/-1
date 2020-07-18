@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- 提高搜索引擎
         处理兼容性问题
@@ -7,9 +8,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0
     keywords='电商'">
-    <title>Document</title>
+    <title>小二商城</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./pic/font_monp1urys9l/iconfont.css">
 </head>
+
 <body>
+    <div class="Mask">
+        <img src="./pic/loading.jpg" alt="">
+    </div>
+    <header>
+        <div class="nav_top open_flex">
+            <div class="top_leftimgs">
+                <img src="./pic/logo.png" alt="">
+            </div>
+            <div class="top_right open_flex">
+                <div class="top_right_input">
+                    <input type="text" placeholder="请输入想要的商品">
+                </div>
+                <button class="right_button"><span class="iconfont icon-fangdajing"></span><span class="right_button_text">搜索</span></button>
+            </div>
+        </div>
+        <nav class="nav_bottom">
+            <ul class="tab_list open_flex">
+                <li class="tab_list_color"><a href="">首页</a></li>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </nav>
+    </header>
     
 </body>
 </html>
+<script src="./js/index.js"></script>

@@ -1,0 +1,47 @@
+.login_form{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login{
+    background-color: #67c23a;
+    color: #fff;
+    width: 100%;
+    margin-top: 30px;
+    border-radius:4px ;
+}
+.login>span{
+    padding: 12px 20px ;
+    display: block;
+}
+.user{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+.user>input{
+    padding-right:15px ;
+    /* flex-grow: 1; */
+    height: 38px;
+    width: 376px;
+    border-radius: 4px;
+
+}
+.user>.icon-yuechi{
+    /* font-size: 22px; */
+    color: #ccc;
+    height: 38px;
+    line-height: 38px;
+
+}
+.user>.icon-yonghu{
+    font-size: 22px;
+    color: #ccc;
+    height: 38px;
+    line-height: 36px;
+}

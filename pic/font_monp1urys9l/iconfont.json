@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1518936",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e50c",
+      "unicode_decimal": 58636
+    },
+    {
+      "icon_id": "3806335",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6187062",
+      "name": "右箭头",
+      "font_class": "arrow-backimg",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "7650007",
+      "name": "钥匙",
+      "font_class": "yuechi",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "8738503",
+      "name": "左箭头",
+      "font_class": "iconfontjiantouzuo",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    }
+  ]
+}
