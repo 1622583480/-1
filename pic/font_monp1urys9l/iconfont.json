@@ -13,6 +13,13 @@
       "unicode_decimal": 58636
     },
     {
+      "icon_id": "3218310",
+      "name": "左箭头",
+      "font_class": "prev",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
       "icon_id": "3806335",
       "name": "用户",
       "font_class": "yonghu",

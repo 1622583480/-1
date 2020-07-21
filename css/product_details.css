@@ -1,0 +1,99 @@
+.Centered{
+    width: 1000px;
+    margin: 0 auto;
+}
+.btn_return{
+    padding: 10px 20px ;
+    align-items: baseline;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.btn_return>.icon-iconfontjiantouzuo{
+    font-size: 12px;
+    margin-right: 4px;
+}
+.commodity_pic{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.commodity_pic>img{
+    width: 400px;
+    height: 400px;
+}
+.mark{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    opacity: 0.6;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.product_review{
+    color:#800080 ;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.star_list{
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Product_desciption{
+    margin: 20px 0;
+    color: #666666;
+}
+.Product_money{
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+.Add_Product{
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px ;
+    background-color: #f56c6c;
+    border-radius: 6px;
+}
+.Add_Product:hover{
+    background-color: #f78989;
+}
+.Product_Overview{
+    margin:100px 0 0 180px ;
+}
+.Product_Thumbnail>img{
+    height: 80px;
+    width: 80px;
+    border: 2px solid #800080;
+}
+.Product_Thumbnail{
+    width: 400px;
+}
+.Products_Featured{
+    margin-top: 20px;
+}
+.Products_Featured>h4{
+    color: #666;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccc;
+}
+.big_commodity_pic{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.big_commodity_pic>img{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    left: 0;
+    display: none;
+
+    top: 0;
+}
