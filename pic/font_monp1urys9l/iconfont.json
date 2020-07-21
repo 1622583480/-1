@@ -34,6 +34,13 @@
       "unicode_decimal": 59120
     },
     {
+      "icon_id": "8143029",
+      "name": "勾号",
+      "font_class": "gouhao",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
       "icon_id": "8738503",
       "name": "左箭头",
       "font_class": "iconfontjiantouzuo",

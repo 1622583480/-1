@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    div {
+        overflow: hidden;
+        width: 1200px;
+        height: 500px;
+    }
+
+    .box {
+        display: flex;
+        border-radius: 16px;
+        position: relative;
+        left: 0px;
+        transition: all 0.5s;
+    }
+</style>
+
+<body>
+    <div>
+        <ul class="box">
+            <li><img src="./pic/lunbo/a.jpg" alt=""></li>
+            <li><img src="./pic/lunbo/b.jpg" alt=""></li>
+            <li><img src="./pic/lunbo/c.jpg" alt=""></li>
+            <li><img src="./pic/lunbo/d.jpg" alt=""></li>
+            <li><img src="./pic/lunbo/e.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    var ul = document.querySelector('.box');
+    var li = document.querySelectorAll('.box>li');
+    var fons = 1;
+    setInterval(function () {
+        console.log(fons * 1200, fons, ul.style.transition);
+
+        ul.style.left = '-' + (1200 * fons) + 'px';
+        var Node = ul.children;
+        console.log(Node)
+        if(fons ==5){
+            Node.forEach(function(item,index){
+                
+                ul.appendChild(index)
+            })
+        }
+
+
+            ++fons;
+    }, 2000);
+
+
+</script>
