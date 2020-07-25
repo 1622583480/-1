@@ -6,8 +6,7 @@
         处理兼容性问题
     -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0
-    keywords='电商'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小二商城</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -15,9 +14,6 @@
 </head>
 
 <body>
-    <div class="Mask">
-        <img src="./pic/loading.jpg" alt="">
-    </div>
     <header>
         <div class="nav_top open_flex">
             <div class="top_leftimgs">
@@ -43,8 +39,25 @@
             </ul>
         </nav>
     </header>
-    
-    <iframe src="./view/home.html" frameborder="0" scrolling="no"name="UrlName"></iframe>
+    <div class="container">
+        <ul class="Product_list open_flex">
+            <li><a target="UrlName" href="./view/Categories.html">咖啡</a></li>
+            <li><a target="UrlName" href="./view/Categories.html">饮食</a></li>
+            <li><a target="UrlName" href="./view/Categories.html">正餐</a></li>
+            <li><a target="UrlName" href="./view/Categories.html">男装</a></li>
+            <li><a target="UrlName" href="./view/Categories.html">女装</a></li>
+            <li><a target="UrlName" href="./view/Categories.html">眼镜</a></li>
+            <li><a target="UrlName" href="./view/Categories.html">鞋靴</a></li>
+        </ul>
+    </div>
+    <iframe src="./view/home.html" style="height:100%;" frameborder="0" scrolling="no" name="UrlName"
+        id="iframepage"></iframe>
+    <div class="prompt"></div>
+    <div class="loading">
+        <img src="./pic/loading.jpg" alt="">
+    </div>
 </body>
+
 </html>
+<script src="./jquery-3.4.0.js"></script>
 <script src="./js/index.js"></script>

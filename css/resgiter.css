@@ -23,6 +23,7 @@ form{
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
+    transition: borderColor 0.5s;
 }
 .user>input{
     padding-right:15px ;
@@ -51,18 +52,6 @@ form{
     margin-top: 4px;
     display: none;
 }
-.prompt{
-    width: 380px;
-    height: 40px;
-    position: absolute;
-    background-color: red;
-    left: 50%;
-    top: -40px;
-    transform: translate(-50%,0);
-    transition: all 0.5s;
-    text-align: center;
-    line-height: 40px;
-    font-size: 14px;
-    background-color: #f0f9eb;
-    color: #67c23a;
+.user:hover{
+    border-color: #333;
 }
