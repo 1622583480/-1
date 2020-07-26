@@ -83,3 +83,7 @@ body{
     color: #fff;
     padding: 2px 6px;
 } */
+.setScrollHeight{
+    height: 1px;
+    width: 1px;
+    }

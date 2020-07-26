@@ -3,6 +3,7 @@ var user = document.querySelectorAll('.user');
 var error_text = document.querySelectorAll('.Error_text');
 var user_name = document.querySelector('.user_name>input');
 var user_password = document.querySelector('.user_password>input');
+window.parent.fixed_dis = false
 
 user_name.onfocus = function () {
     user[0].style.borderColor = "#800080"
@@ -64,11 +65,15 @@ btn.onclick = function (event) {
         }, 2400)
     }
 }
-var getScrollHeight = function () {
-    return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-}
-setTimeout(function () {
-    console.log(getScrollHeight())
-    window.parent.ifr_height = 1;
-    window.parent.ifr.style.height = 400 + 'px'
-}, 200)
+// var getScrollHeight = function () {
+//     return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+// }
+// setTimeout(function () {
+//     console.log(getScrollHeight())
+//     window.parent.ifr_height = 1;
+//     window.parent.ifr.style.height = 400 + 'px'
+// }, 200)
+
+setTimeout(function(){
+    window.parent.ifr_height = 400
+},200)

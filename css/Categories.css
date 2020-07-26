@@ -52,3 +52,7 @@
 .all_products{
     flex-wrap: wrap;
 }
+.setScrollHeight{
+    height: 1px;
+    width: 1px;
+    }

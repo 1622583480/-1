@@ -82,7 +82,7 @@ $(".product_picture").on("mousemove", function (e) {
     if (moveY > maxY) {
         moveY = maxY;
         $(".mark").css({
-            top: moveY + "px",
+            top: moveY + "px"
         });
     }
     var glassX = 2 * moveX;
@@ -110,13 +110,17 @@ btn_return.onmousedown = function () {
 btn_return.onmouseup = function () {
     btn_return.style.borderColor = "";
     window.parent.ifr.style.height = 3000  +"px"
+    window.parent.Product.style.display = 'flex'
+
     window.history.back()
+
 }
 window.onload = function () {
-    var ifr_height = document.documentElement.offsetHeight + 137;
-    console.log(ifr_height)
-    // console.log(Centered.offsetHeight)
-    window.parent.ifr.style.height = ifr_height  +"px";
+    window.parent.Product.style.display = 'none'
+    // var ifr_height = document.documentElement.offsetHeight + 137;
+    // console.log(ifr_height)
+    // // console.log(Centered.offsetHeight)
+    // window.parent.ifr.style.height = ifr_height  +"px";
 
     var ULR_T = `http://vebcoder.cn:9527/api/detail?goodId=${sessionStorage.getItem('Preducts')}`
     var type_oneUrl = 'http://vebcoder.cn:9527/api/goodList'
@@ -204,9 +208,17 @@ window.onload = function () {
             }
         });
     },200)
+    var getScrollHeight = function () {
+        return document.querySelector('.Centered').offsetHeight
+    }
+    setTimeout(function(){
+        window.parent.ifr_height = 1137
+        console.log(getScrollHeight())
+    },200)
+    
 }
 setTimeout(function () {
-    console.log(getScrollHeight())
+    // console.log(getScrollHeight())
     var imgs_tabimg = document.querySelectorAll('.Product_Thumbnail>img');
     for (var i = 0; i < imgs_tabimg.length; i++) {
         imgs_tabimg[i].onclick = function () {
@@ -224,10 +236,10 @@ setTimeout(function () {
     }
 
 }, 200)
-var getScrollHeight = function () {
-    return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-}
-setTimeout(function () {
-    console.log(getScrollHeight())
-    window.parent.ifr_height = getScrollHeight() - 200;
-}, 200)
+// var getScrollHeight = function () {
+//     return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+// }
+// setTimeout(function () {
+//     console.log(getScrollHeight())
+//     window.parent.ifr_height = getScrollHeight() - 200;
+// }, 200)

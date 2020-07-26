@@ -55,3 +55,7 @@ form{
 .user:hover{
     border-color: #333;
 }
+.setScrollHeight{
+    height: 1px;
+    width: 1px;
+    }
