@@ -87,7 +87,11 @@ window.onload = function () {
                         obj = {};
                         newArr = []
                         obj.title = res[j];
+                        /* [
+                            {title:咖啡粉,newarr = [{}{}{}{}]
+                            {}
 
+                        ]*/ 
                         for (var x = 0; x < data.length; x++) {
                             if (obj.title == data[x].type_two) {
                                 // console.log('加入', data[x])

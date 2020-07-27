@@ -12,7 +12,7 @@ var fixed = document.querySelector('.fixed');
 var Product = document.querySelector('.Product_list')
 
 
-function fixed_pro_click(Category_title) {
+function fixed_pro_click(Category_title) { // 在页面渲染完成后调用 
     var fixed_pro = document.querySelectorAll('.fixed>li');
     // 获取ul下面的所有li
     fixed_pro[0].className = 'fixed_pro';
@@ -29,6 +29,7 @@ function fixed_pro_click(Category_title) {
         }
     }
 }
+//参数 某个html元素 
 function getElementTop(element) { //元素距顶部文档的距离
     var actualTop = element.offsetTop;
     var current = element.offsetParent;
@@ -40,13 +41,13 @@ function getElementTop(element) { //元素距顶部文档的距离
 }
 
 
-tab_list[4].style.display = "none";
-tab_list[3].style.display = "none";
+tab_list[4].style.display = "none"; //页面刚加载     购物车 退出登录默认 隐藏
+tab_list[3].style.display = "none"; // 
 var resgiter_status = 0;
 var resgiter_status_test = '';
 var State_val = null;
-var ifr_height = null;
-var fixed_dis = false
+var ifr_height = null; // 控制 iframe高度变量 
+var fixed_dis = false;
 // ifr_height = 1000
 
 for (var i = 0; i < Product_list.length; i++) {
@@ -118,11 +119,7 @@ setInterval(function () {
             fixed.style.display = 'block'
         }else{
             fixed.style.display = 'none'
-
         }
-
-
-
 }, 500)
 
 tab_list[4].onclick = function (e) {
